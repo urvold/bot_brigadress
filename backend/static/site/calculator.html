@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Умный калькулятор — БригАдрес</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="canonical" href="https://brigadress.ru/calculator.html" />
+  <meta property="og:site_name" content="БригАдрес" />
+  <meta property="og:title" content="БригАдрес — подбор подрядчиков для ремонта" />
+  <meta property="og:description" content="Онлайн-сервис подбора проверенных бригад. Фиксируем цену и сроки, сопровождаем до приемки." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brigadress.ru/calculator.html" />
+  <meta property="og:image" content="https://brigadress.ru/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://brigadress.ru/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "БригАдрес",
+    "url": "https://brigadress.ru/",
+    "logo": "https://brigadress.ru/og-image.png",
+    "sameAs": [
+      "https://t.me/brigadres",
+      "https://vk.com/brigadres"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+7-933-419-15-97",
+      "contactType": "customer service",
+      "availableLanguage": ["ru"]
+    }]
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="БригАдрес" class="logo-image">
+      <span class="logo-text">БригАдрес</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="projects.html">Проекты</a>
+      <a href="contractors.html">Подрядчикам</a>
+      <a href="documents.html">Документы</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header-contacts">
+      <a href="tel:89334191597" class="phone">8 933 419-15-97</a>
+      <div class="messengers">
+        <a href="https://t.me/brigadres" class="messenger-icon" target="_blank" rel="noopener noreferrer">TG</a>
+        <a href="https://vk.com/brigadres" class="messenger-icon" target="_blank" rel="noopener noreferrer">VK</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Умный калькулятор — расскажите о задаче за 2 минуты</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container form-container">
+      <div class="form-info">
+        <p class="section-lead">
+          Это не калькулятор «в рублях». Это инструмент, который помогает собрать понятное ТЗ и подобрать
+          под него подрядчиков. Вы описываете задачу, мы — проверяем исполнителей и даём ориентиры по бюджету и срокам.
+        </p>
+        <p>
+          Чем точнее вы заполните форму, тем точнее будет подбор. Если не знаете, что писать — просто объясните
+          по‑человечески, а мы переведём это на язык стройки.
+        </p>
+      </div>
+      <form class="smart-calculator" id="smart-calculator">
+        <div class="form-row">
+          <label>Тип объекта
+            <select name="object" required>
+              <option value="Квартира">Квартира</option>
+              <option value="Дом">Дом</option>
+              <option value="Офис">Офис</option>
+              <option value="Коммерческий объект">Коммерческий объект</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Примерная площадь, м²
+            <input type="number" name="area" min="1" max="1000" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Тип работ
+            <select name="work_type" required>
+              <option value="Косметический ремонт">Косметический ремонт</option>
+              <option value="Капитальный ремонт">Капитальный ремонт</option>
+              <option value="Ремонт под ключ с дизайн‑проектом">Ремонт под ключ с дизайн‑проектом</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Когда планируете стартовать?
+            <select name="timeframe">
+              <option value="В ближайший месяц">В ближайший месяц</option>
+              <option value="Через 2–3 месяца">Через 2–3 месяца</option>
+              <option value="Пока только прицениваюсь">Пока только прицениваюсь</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Как с вами удобнее связаться?
+            <select name="contact_method">
+              <option value="Телефон">Телефон</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Telegram">Telegram</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Дополнительные комментарии
+            <textarea name="extra" rows="4" placeholder="Например: важно уложиться к определённой дате, есть/нет дизайн‑проекта и т.п."></textarea>
+          </label>
+        </div>
+        <div class="form-row form-row-inline">
+          <label class="checkbox">
+            <input type="checkbox" required />
+            <span>Я согласен с <a href="legal.html" target="_blank">политикой обработки персональных данных</a>.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Сформировать ТЗ и подобрать подрядчиков</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="calc-result" hidden>
+    <div class="container">
+      <div class="calc-result">
+        <h2>Что мы поняли о вашем проекте</h2>
+        <div class="calc-result-content"></div>
+        <p class="calc-result-note">
+          Это черновой набросок. После короткого созвона мы уточним детали, скорректируем ТЗ и подберём
+          подходящих подрядчиков из нашей базы.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h3>Контакты</h3>
+      <p><a href="tel:89334191597">8 933 419-15-97</a></p>
+      <p><a href="mailto:brigadres@mail.ru">brigadres@mail.ru</a></p>
+      <p>Остались вопросы? Напишите нам — ответим за 5 минут!</p>
+      <div class="footer-messengers">
+        <a href="https://t.me/brigadres" class="messenger-icon" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://vk.com/brigadres" class="messenger-icon" target="_blank" rel="noopener noreferrer">VK</a>
+      </div>
+      <p class="footer-schedule">
+        Для юр. лиц: ср–пт: 9:00–18:00<br/>
+        Для клиентов: ежедневно: 8:00–22:00
+      </p>
+    </div>
+    <div class="footer-col">
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="calculator.html">Подбор подрядчиков</a></li>
+        <li><a href="commission.html">Наша комиссия</a></li>
+        <li><a href="documents.html">Документы</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="about.html">О нас</a></li>
+<li><a href="projects.html">Проекты</a></li>
+      </ul>
+      <h4>Партнёрам</h4>
+      <ul>
+        <li><a href="contractors.html">Для подрядчиков</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Юридическая информация</h3>
+      <ul>
+        <li><a href="legal.html">Публичная оферта, политика конфиденциальности и согласие</a></li>
+      </ul>
+      <p class="footer-legal">
+        Реквизиты: ИП Иванов А.А., ИНН 1234567890.
+      </p>
+      <p class="footer-warning">
+        Все права защищены.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>БригАдрес — WebApp Demo</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="/site/css/styles.css" />
+  <style>
+    /* Небольшие доп. стили под WebApp */
+    .wa-shell{max-width:980px;margin:0 auto;padding:16px}
+    .wa-top{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .wa-tabs{display:flex;flex-wrap:wrap;gap:8px}
+    .wa-tab{border:1px solid rgba(0,0,0,.12);border-radius:999px;padding:8px 12px;cursor:pointer;font-weight:600}
+    .wa-tab.active{background:rgba(0,0,0,.06)}
+    .wa-card{border:1px solid rgba(0,0,0,.12);border-radius:16px;padding:14px;background:#fff}
+    .wa-grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width: 900px){.wa-grid{grid-template-columns:1fr 1fr}}
+    .wa-muted{opacity:.7}
+    .wa-row{display:flex;gap:10px;flex-wrap:wrap}
+    .wa-input{width:100%;padding:10px 12px;border:1px solid rgba(0,0,0,.2);border-radius:10px}
+    .wa-btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid rgba(0,0,0,.18);cursor:pointer;font-weight:700}
+    .wa-btn.primary{background:#0f172a;color:#fff;border-color:#0f172a}
+    .wa-btn.danger{background:#b91c1c;color:#fff;border-color:#b91c1c}
+    .wa-kv{display:flex;gap:10px;flex-wrap:wrap}
+    .wa-kv > div{min-width:220px}
+    .wa-badge{display:inline-block;border:1px solid rgba(0,0,0,.2);border-radius:999px;padding:4px 8px;font-size:12px}
+    .wa-hr{height:1px;background:rgba(0,0,0,.08);margin:10px 0}
+    .wa-table{width:100%;border-collapse:collapse}
+    .wa-table th,.wa-table td{border-bottom:1px solid rgba(0,0,0,.08);padding:8px 6px;text-align:left;vertical-align:top}
+    .wa-table th{font-size:12px;opacity:.75}
+    .wa-status{font-weight:800}
+  </style>
+</head>
+<body>
+  <div class="wa-shell">
+    <div class="wa-top">
+      <div>
+        <div style="font-weight:900;font-size:18px;line-height:1.1">БригАдрес — Showcase WebApp</div>
+        <div class="wa-muted" id="tg-user-line">Открыто в браузере</div>
+      </div>
+      <div class="wa-row">
+        <a class="wa-btn" href="/site/index.html" target="_blank" rel="noopener">Сайт</a>
+        <a class="wa-btn" href="/site/calculator.html" target="_blank" rel="noopener">Калькулятор</a>
+      </div>
+    </div>
+
+    <div class="wa-tabs" id="tabs">
+      <div class="wa-tab active" data-tab="faq">FAQ</div>
+      <div class="wa-tab" data-tab="docs">Документы</div>
+      <div class="wa-tab" data-tab="projects">Проекты</div>
+      <div class="wa-tab" data-tab="lead">Оставить заявку</div>
+      <div class="wa-tab" data-tab="admin">Админка</div>
+    </div>
+
+    <div class="wa-hr"></div>
+
+    <div id="view"></div>
+  </div>
+
+  <script src="/webapp/app.js"></script>
+</body>
+</html>

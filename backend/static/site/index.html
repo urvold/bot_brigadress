@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>БригАдрес — ваш гарант времени и спокойствия в ремонте</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="canonical" href="https://brigadress.ru/" />
+  <meta property="og:site_name" content="БригАдрес" />
+  <meta property="og:title" content="БригАдрес — подбор подрядчиков для ремонта" />
+  <meta property="og:description" content="Онлайн-сервис подбора проверенных бригад. Фиксируем цену и сроки, сопровождаем до приемки." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brigadress.ru/" />
+  <meta property="og:image" content="https://brigadress.ru/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://brigadress.ru/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "БригАдрес",
+    "url": "https://brigadress.ru/",
+    "logo": "https://brigadress.ru/og-image.png",
+    "sameAs": [
+      "https://t.me/brigadres",
+      "https://vk.com/brigadres"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+7-933-419-15-97",
+      "contactType": "customer service",
+      "availableLanguage": ["ru"]
+    }]
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <img src="img/logo.png" alt="БригАдрес" class="logo-image">
+      <span class="logo-text">БригАдрес</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="projects.html">Проекты</a>
+      <a href="contractors.html">Подрядчикам</a>
+      <a href="documents.html">Документы</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header-contacts">
+      <a href="tel:89334191597" class="phone">8 933 419-15-97</a>
+      <div class="messengers">
+        <a href="https://t.me/brigadres" target="_blank" rel="noopener noreferrer" class="messenger-icon">TG</a>
+        <a href="https://vk.com/brigadres" target="_blank" rel="noopener noreferrer" class="messenger-icon">VK</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-label">Онлайн-сервис подбора подрядчиков</p>
+        <h1>Ремонт, который <span class="highlight">не отнимает у вас время</span>.</h1>
+        <p class="hero-subtitle">
+          Возьмем на себя всё: от подбора проверенной бригады до финальной уборки.
+          Вы получаете результат по фиксированной цене и сроку, а не бесконечный контроль за стройкой.
+        </p>
+        <div class="hero-actions">
+          <a href="#lead-form" class="btn btn-primary">Ремонт без стресса</a>
+          <a href="#how" class="btn btn-outline">Как это работает?</a>
+        </div>
+        <div class="discount-banner">
+          <div class="discount-main">
+            <div class="discount-label">Скидка 20% на первый подбор подрядчика</div>
+            <div class="discount-prices">
+              <span class="old-price">3000 ₽</span>
+              <span class="new-price">2400 ₽</span>
+            </div>
+            <p class="discount-note">
+              Успейте до окончания акции — экономия денег плюс <span class="highlight">экономия времени</span>.
+            </p>
+          </div>
+          <div class="discount-timer">
+            <span class="discount-timer-label">До конца акции осталось:</span>
+            <span id="discount-timer" data-deadline="2026-02-01T23:59:59">—</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="img/hero-chat.jpg" alt="Клиент общается с сервисом «БригАдрес» и получает отчёты о ремонте ванной" class="hero-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="how">
+    <div class="container">
+      <h2>Как это работает?</h2>
+      <p class="section-lead">
+        От заявки до <span class="highlight">идеального результата</span> — под нашим контролем.
+        Вы рассказываете, что хотите получить, а мы берём на себя поиск, проверку и контроль подрядчиков.
+      </p>
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">1</div>
+          <h3>Заявка за 2 минуты</h3>
+          <p>Оставляете заявку на сайте или в мессенджере — и мы включаемся в работу.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-number">2</div>
+          <h3>Брифинг и ТЗ</h3>
+          <p>Менеджер помогает сформулировать понятное подрядчикам техническое задание.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-number">3</div>
+          <h3>Подбор за 24 часа</h3>
+          <p>В течение суток вы получаете 1–3 подходящие бригады из нашей проверенной базы.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-number">4</div>
+          <h3>Замер и финальная смета</h3>
+          <p>Организуем выезд на объект, уточнение деталей и финальную смету без скрытых работ.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-number">5</div>
+          <h3>Договор и старт работ</h3>
+          <p>Фиксируем цену и сроки в договоре. Подрядчик приступает к работам.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-number">6</div>
+          <h3>Контроль качества на каждом этапе</h3>
+          <p>
+            Вы получаете фото- и видеоотчёты в удобном мессенджере.
+            Ваш личный прораб и менеджер держат <span class="highlight">контроль</span> за каждым этапом.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="about">
+    <div class="container">
+      <h2>Почему 9 из 10 клиентов рекомендуют нас друзьям?</h2>
+      <p class="section-lead">
+        Потому что мы экономим не только деньги, но и самое ценное — <span class="highlight">ваше время</span>.
+        Вместо десятков звонков, поездок на объект и споров с подрядчиками вы получаете понятный процесс.
+      </p>
+
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <h3>Экономия времени</h3>
+          <p>Берём на себя поиск бригад, проверки, сметы, согласования и контроль. Вы освобождаете часы для семьи и работы.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Проверенные подрядчики</h3>
+          <p>В базе только те команды, которых мы проверили по работам, документам и отзывам.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Прозрачность и контроль</h3>
+          <p>Смета, сроки, переписка и отчёты — всё в одном месте. Никаких внезапных «допработ».</p>
+        </article>
+      </div>
+
+      <div class="doc-promo" id="docs">
+        <h3>Документы, которые защищают ваш ремонт</h3>
+        <p class="doc-promo-lead">
+          Мы фиксируем условия ещё до старта работ: цену, сроки, состав работ и гарантию.
+          Это не «обещания в переписке», а понятные документы, которые работают в вашу пользу.
+        </p>
+        <div class="doc-promo-grid">
+          <div class="doc-promo-list">
+            <div class="doc-promo-item">
+              <span class="doc-promo-badge">1</span>
+              <div>
+                <p class="doc-promo-title">Публичная оферта</p>
+                <p class="doc-promo-text">Закрепляет правила, ответственность и порядок оплаты услуг сервиса.</p>
+              </div>
+            </div>
+            <div class="doc-promo-item">
+              <span class="doc-promo-badge">2</span>
+              <div>
+                <p class="doc-promo-title">Описание и условия работ</p>
+                <p class="doc-promo-text">Детализирует перечень работ, сроки и материалы — без сюрпризов по смете.</p>
+              </div>
+            </div>
+            <div class="doc-promo-item">
+              <span class="doc-promo-badge">3</span>
+              <div>
+                <p class="doc-promo-title">Акт приёмки</p>
+                <p class="doc-promo-text">Фиксирует результат и запускает гарантийный период (24 месяца).</p>
+              </div>
+            </div>
+
+            <div class="doc-promo-actions">
+              <a href="documents.html" class="btn btn-primary">Смотреть документы</a>
+              <a href="#lead-form" class="btn btn-outline">Оставить заявку</a>
+            </div>
+          </div>
+
+          <div class="doc-promo-preview">
+            <p class="doc-slide-label">Примеры страниц</p>
+            <div class="doc-thumbs">
+              <a href="img/docs/public-offer-1.jpg" target="_blank" rel="noopener noreferrer"><img src="img/docs/public-offer-1.jpg" alt="Документ — страница" loading="lazy"></a>
+              <a href="img/docs/work-description-1.jpg" target="_blank" rel="noopener noreferrer"><img src="img/docs/work-description-1.jpg" alt="Документ — страница" loading="lazy"></a>
+              <a href="img/docs/acceptance-act-1.jpg" target="_blank" rel="noopener noreferrer"><img src="img/docs/acceptance-act-1.jpg" alt="Документ — страница" loading="lazy"></a>
+              <a href="img/docs/public-offer-2.jpg" target="_blank" rel="noopener noreferrer"><img src="img/docs/public-offer-2.jpg" alt="Документ — страница" loading="lazy"></a>
+            </div>
+            <p class="doc-promo-note">Нажмите на страницу, чтобы открыть в полном размере.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timecalc" id="timecalc">
+        <h3>Узнайте, сколько времени вы сэкономите</h3>
+        <p class="timecalc-lead">
+          Небольшой интерактивный расчёт, который показывает, сколько часов обычно «съедает» организация ремонта.
+        </p>
+
+        <div class="timecalc-progress">
+          <div class="timecalc-progress-bar">
+            <div class="timecalc-progress-fill" id="timecalc-progress-fill"></div>
+          </div>
+          <div class="timecalc-progress-steps">
+            <span class="active">1. Вводные</span>
+            <span>2. Организация</span>
+            <span>3. Результат</span>
+          </div>
+        </div>
+
+        <div class="timecalc-steps">
+          <div class="timecalc-step active" data-step="1">
+            <h4>Шаг 1. Вводные данные</h4>
+            <div class="timecalc-question">
+              <p>Какой ремонт вы планируете?</p>
+              <div class="timecalc-options" data-name="type">
+                <button type="button" class="timecalc-option" data-value="cosmetic">Косметический (покраска, обои)</button>
+                <button type="button" class="timecalc-option" data-value="capital">Капитальный (с заменой коммуникаций)</button>
+                <button type="button" class="timecalc-option" data-value="full">Под ключ (с дизайн-проектом)</button>
+              </div>
+            </div>
+            <div class="timecalc-question">
+              <p>Планируете ли вы сами закупать материалы?</p>
+              <div class="timecalc-options" data-name="materials">
+                <button type="button" class="timecalc-option" data-value="yes">Да, буду закупать сам</button>
+                <button type="button" class="timecalc-option" data-value="no">Нет, пусть этим займётся подрядчик</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary timecalc-next" id="timecalc-start">Перейти к расчёту</button>
+          </div>
+
+          <div class="timecalc-step" data-step="2">
+            <h4>Шаг 2. Посчитаем, сколько времени съедает организация</h4>
+            <p class="timecalc-lead">
+              Ниже только организационные задачи без учёта самого ремонта.
+              Нажмите на каждую — и увидите, как быстро растут часы.
+            </p>
+            <ul class="timecalc-task-list" id="timecalc-task-list">
+              <li data-hours="30">Поиск подрядчиков (просмотр 15+ анкет, отзывов): <span>+30 часов</span></li>
+              <li data-hours="20">Встречи и переговоры (с 3–5 бригадами): <span>+20 часов</span></li>
+              <li data-hours="15">Согласование детализированной сметы: <span>+15 часов</span></li>
+              <li data-hours="35">Контроль закупки материалов (или самостоятельная покупка): <span>+35 часов</span></li>
+              <li data-hours="80">Ежедневный/еженедельный контроль на объекте: <span>+80 часов</span></li>
+              <li data-hours="15">Решение форс-мажоров и споров: <span>+15 часов</span></li>
+            </ul>
+            <div class="timecalc-total">
+              <span class="timecalc-total-label">Суммарно на организацию:</span>
+              <span class="timecalc-total-value" id="timecalc-total-animated">0 часов</span>
+            </div>
+            <button type="button" class="btn btn-outline timecalc-next" id="timecalc-to-result">Показать результат</button>
+          </div>
+
+          <div class="timecalc-step" data-step="3">
+            <h4>Шаг 3. Финальный результат</h4>
+            <div class="timecalc-result">
+              <div class="timecalc-result-number" id="timecalc-total-final">~195 часов</div>
+              <p class="timecalc-result-text" id="timecalc-result-text">
+                195 часов — это больше восьми полных суток. Столько времени вы потратите не на сам ремонт,
+                а на организацию. С «БригАдрес» эти часы вы тратите на семью, хобби и отдых, а мы берём всю
+                организацию на себя.
+              </p>
+              <div class="timecalc-icons">
+                <span>👨‍👩‍👧 семья</span>
+                <span>✈️ путешествия</span>
+                <span>📚 книги</span>
+                <span>🎸 хобби</span>
+              </div>
+              <a href="#lead-form" class="btn btn-primary timecalc-cta">
+                Верните мне мои 200 часов!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="compare">
+    <div class="container">
+      <h2>С нами выходит выгоднее, чем искать самому</h2>
+      <p class="section-lead">
+        Ответим на самый главный вопрос. Кажется, что, нанимая напрямую, вы экономите.
+        На деле — вы теряете больше. Вот простая арифметика вашей экономии.
+      </p>
+      <p class="section-lead">
+        Разберём на конкретном примере. Представьте, вы хотите сделать ремонт ванной «под ключ» —
+        рассчитаем стоимость работ напрямую и через наш сервис:
+      </p>
+      <div class="compare-visual">
+        <img src="img/pricing-bars.jpg" alt="Сравнение структуры цены ремонта: напрямую и через БригАдрес" />
+      </div>
+      <p class="section-leад">
+        В среднем стоимость через БригАдрес ниже на 8–10%, потому что мы устранили издержки подрядчика на рекламу
+        и менеджера, заменив их нашей эффективной комиссией 5%. При этом вы получаете финансовые гарантии и полный
+        контроль, которых нет при работе напрямую.
+      </p>
+    </div>
+  </section>
+
+  
+
+  <section class="section section-dark" id="contractors">
+    <div class="container">
+      <h2>Подрядчикам</h2>
+      <p class="section-lead">
+        «БригАдрес» — не ещё один агрегатор заявок. Мы помогаем бригадам и компаниям работать с «тёплыми» клиентами,
+        понятным ТЗ и прозрачными условиями.
+      </p>
+      <div class="contractors-grid">
+        <article class="contractor-card">
+          <h3>Честные условия</h3>
+          <p>Фиксированная комиссия за приведённого клиента. Никаких скрытых платежей и платных «поднятий в выдаче».</p>
+        </article>
+        <article class="contractor-card">
+          <h3>Подготовленные клиенты</h3>
+          <p>Клиент приходит с уже собранным ТЗ, пониманием бюджета и сроков. Меньше пустых встреч.</p>
+        </article>
+        <article class="contractor-card">
+          <h3>Долгосрочное партнёрство</h3>
+          <p>Мы заинтересованы в качестве работ — хорошие бригады получают новых клиентов из нашей экосистемы.</p>
+        </article>
+      </div>
+      <p class="contractors-note">
+        Если вы уверены в качестве своих работ и хотите больше стабильных заказов, напишите нам в Telegram: <a href="https://t.me/brigadres" target="_blank" rel="noopener noreferrer">@brigadres</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="lead-form">
+    <div class="container form-container">
+      <div class="form-info">
+        <h2>Расскажите о своём проекте</h2>
+        <p>
+          Заполните простую форму — мы свяжемся с вами, уточним детали и предложим проверенных подрядчиков
+          с понятной сметой и сроками. Без навязчивых звонков и лишних встреч.
+        </p>
+      </div>
+      <form class="lead-form">
+        <div class="form-row">
+          <label>Имя
+            <input type="text" name="name" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Телефон
+            <input type="tel" name="phone" placeholder="8 9XX XXX-XX-XX" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Тип объекта и примерная площадь
+            <textarea name="project" rows="3" placeholder="Например: квартира 45 м², косметический ремонт."></textarea>
+          </label>
+        </div>
+        <div class="form-row form-row-inline">
+          <label class="checkbox">
+            <input type="checkbox" required />
+            <span>
+              Я принимаю условия
+              <a href="https://disk.yandex.ru/d/ttlyl_xgB4KdQw" target="_blank" rel="noopener noreferrer">договора оферты</a>
+              и
+              <a href="https://disk.yandex.ru/d/QJ3SUIqIjdtrEg" target="_blank" rel="noopener noreferrer">согласия на обработку персональных данных</a>.
+            </span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+        <p class="form-success" hidden>Спасибо! Заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h3>Контакты</h3>
+      <p><a href="tel:89334191597">8 933 419-15-97</a></p>
+      <p><a href="mailto:brigadres@mail.ru">brigadres@mail.ru</a></p>
+      <p>Ответим в будни за 5–10 минут.</p>
+      <div class="footer-messengers">
+        <a href="https://t.me/brigadres" target="_blank" rel="noopener noreferrer" class="messenger-icon">Telegram</a>
+        <a href="https://vk.com/brigadres" target="_blank" rel="noopener noreferrer" class="messenger-icon">VK</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="#top">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#contractors">Подрядчикам</a></li>
+        <li><a href="documents.html">Документы</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Юридическая информация</h3>
+      <ul>
+        <li><a href="legal.html">Публичная оферта, политика конфиденциальности и согласие</a></li>
+      </ul>
+      <p class="footer-legal">ИП Иванов А.А., ИНН 1234567890.</p>
+      <p class="footer-warning">Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

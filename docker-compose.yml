@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-brigadress}
+      POSTGRES_USER: ${POSTGRES_USER:-brigadress}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-brigadress}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    build: ./backend
+    env_file: .env
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./seed_content.json:/app/seed_content.json:ro
+
+  bot:
+    build: ./bot
+    env_file: .env
+    depends_on:
+      - api
+    volumes:
+      - ./bot:/app
+
+volumes:
+  pgdata:
