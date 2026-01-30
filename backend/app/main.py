@@ -32,8 +32,8 @@ async def on_startup():
         await conn.run_sync(Base.metadata.create_all)
     # seed content from file
     async for session in get_session():
-    await seed_from_file(session, "seed_content.json")
-    break
+        await seed_from_file(session, "seed_content.json")
+        break
 
 
 # Serve static site and webapp
