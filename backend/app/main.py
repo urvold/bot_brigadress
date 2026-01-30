@@ -31,8 +31,10 @@ async def on_startup():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     # seed content from file
-    async with get_session().__anext__() as session:
-        await seed_from_file(session, "seed_content.json")
+    async for session in get_session():
+    await seed_from_file(session, "seed_content.json")
+    break
+
 
 # Serve static site and webapp
 app.mount("/site", StaticFiles(directory="static/site", html=True), name="site")
